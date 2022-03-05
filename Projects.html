@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-image: url('css.png');
+        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+    
+    <nav>
+        <h1>Portfolio</h1>
+        <ol>
+            <li><a href="Index.html"> About </a></li>
+            <li><a href="Projects.html"> Projects </a></li>
+            <li> <a href="Contacts.html">Contact </a></li>
+        </ul>
+    </nav>
+    <center><h1>Projects</h1></center>
+    <section>
+        <div>
+            <img src="HTML2.png" alt="" height="250px" width="300px">
+            <h1>HTML</h1>
+            <p>First project will be creating a HTML page .</p>
+            <video width="320" height="240" controls>
+                <source src="Make Your First HTML Form - Easy Explanation (2021).mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            <a href="">Code</a>
+            <h6>Html CODE</h6>
+
+        </div>
+        <br> <br> <hr>
+
+        <div>
+            <img src="CSS2.png" alt="" height="250px" width="250px">
+            <h1>CSS</h1>
+            <p>Second project is to create a HTML page with CSS .</p>
+            <video width="320" height="240" controls>
+                <source src="CSS in 5 minutes _ Styling Tutorial _ Code in 5.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            <a href="">Code</a>
+            <h6>css CODE</h6>
+
+        </div>
+        <br> <br> <hr>
+        <div>
+            <img src="js3.png" alt="" height="200px" width="350px">
+            <h1>JS</h1>
+            <p>Third project is to create a HTML page using JS code.</p>
+            <video width="320" height="240" controls>
+                <source src="Learn JAVASCRIPT in just 5 MINUTES (2020).mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            <a href="">Code</a>
+            <h6>JS CODE</h6>
+
+        </div>
+        <br> <br> <hr>
+        <br> <br> <hr>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+    </section>
+
+    <hr>
+    <footer>
+        <h3>Hassine ACHOUR</h3> <br>
+        <h3>52469847</h3> <br>
+        <h3>achourhassine@gmail.com</h3>
+        <a href="https://www.facebook.com//" target="_blank"> <img src="fb.png" width="100px" height="100px" alt=""> </a>
+        <a href="https://fr.linkedin.com/" target="_blank"> <img src="Linkedin-Emblème.png" width="100px" height="100px" alt=""> </a>
+        <a href="https://twitter.com/twitter?lang=fr" target="_blank"> <img src="twitter.png" width="100px" height="100px" alt=""> </a>
+    </footer>
+</body>
+</html>
